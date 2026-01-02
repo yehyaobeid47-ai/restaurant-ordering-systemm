@@ -1,0 +1,183 @@
+  /* Footer.css */
+
+.footer {
+    background: linear-gradient(135deg, #ff6347, #ff7f50);
+    color: #fff;
+    padding: 50px 20px 20px 20px;
+    font-family: 'Arial', sans-serif;
+
+    /* Footer initial animation */
+    opacity: 0;
+    transform: translateY(50px);
+    animation: footerFadeIn 1s ease forwards;
+    animation-delay: 0.3s;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* About & Newsletter */
+.footer-about {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-about h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.footer-about p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.newsletter {
+    display: flex;
+    gap: 10px;
+}
+
+.newsletter input {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 20px;
+    flex: 1;
+}
+
+.newsletter button {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #ff6347;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.newsletter button:hover {
+    background-color: #ffd1c1;
+    transform: scale(1.05);
+}
+
+/* Reviews */
+.footer-reviews {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-reviews h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.review {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+    /* Animation for each review */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: reviewFadeIn 0.8s ease forwards;
+}
+
+.review:nth-child(1) { animation-delay: 0.5s; }
+.review:nth-child(2) { animation-delay: 0.7s; }
+.review:nth-child(3) { animation-delay: 0.9s; }
+
+.review:hover {
+    transform: scale(1.03);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.review span {
+    display: block;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    color: #fff;
+    opacity: 0.8;
+}
+
+/* Social Links */
+.footer-social {
+    flex: 0.5;
+    min-width: 150px;
+}
+
+.footer-social h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-right: 12px;
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #ffd1c1;
+}
+
+/* Footer bottom */
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    padding-top: 15px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Animations keyframes */
+@keyframes footerFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes reviewFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer-about, .footer-reviews, .footer-social {
+        text-align: center;
+    }
+
+    .newsletter {
+        flex-direction: column;
+    }
+
+    .newsletter input, .newsletter button {
+        width: 100%;
+    }
+}
