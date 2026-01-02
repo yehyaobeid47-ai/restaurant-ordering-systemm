@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/restaurant-ordering-systemm/static/css/main.f7ccc411.css",
+    "main.js": "/restaurant-ordering-systemm/static/js/main.3ee9f3de.js",
+    "static/js/453.2d6c2f74.chunk.js": "/restaurant-ordering-systemm/static/js/453.2d6c2f74.chunk.js",
+    "static/media/rest3.jpg": "/restaurant-ordering-systemm/static/media/rest3.975545c268e1fb40180e.jpg",
+    "static/media/coke.jpg": "/restaurant-ordering-systemm/static/media/coke.d449ee6bf050eb42d00e.jpg",
+    "static/media/shawarma2.jpg": "/restaurant-ordering-systemm/static/media/shawarma2.76176ed81f30599a360a.jpg",
+    "static/media/burger2.jpg": "/restaurant-ordering-systemm/static/media/burger2.96a389a52ac578e049ab.jpg",
+    "static/media/water.jpg": "/restaurant-ordering-systemm/static/media/water.ce7993b83de65f6a6b12.jpg",
+    "static/media/shawarma.jpg": "/restaurant-ordering-systemm/static/media/shawarma.4f9e046bb20832b9e090.jpg",
+    "static/media/pizza4.jpg": "/restaurant-ordering-systemm/static/media/pizza4.73ebe0d2528d175ccbd2.jpg",
+    "static/media/pizza2.jpg": "/restaurant-ordering-systemm/static/media/pizza2.e8d9ed9720e05aa60160.jpg",
+    "static/media/pizza.jpg": "/restaurant-ordering-systemm/static/media/pizza.abe3d2728048b0361f4c.jpg",
+    "static/media/pizza3.jpg": "/restaurant-ordering-systemm/static/media/pizza3.cc73c12323453a7441d7.jpg",
+    "static/media/rest1.jpg": "/restaurant-ordering-systemm/static/media/rest1.f8733a67b579d7e7c70e.jpg",
+    "static/media/juice.jpg": "/restaurant-ordering-systemm/static/media/juice.f62fca623d62f6a81cfb.jpg",
+    "index.html": "/restaurant-ordering-systemm/index.html",
+    "main.f7ccc411.css.map": "/restaurant-ordering-systemm/static/css/main.f7ccc411.css.map",
+    "main.3ee9f3de.js.map": "/restaurant-ordering-systemm/static/js/main.3ee9f3de.js.map",
+    "453.2d6c2f74.chunk.js.map": "/restaurant-ordering-systemm/static/js/453.2d6c2f74.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f7ccc411.css",
+    "static/js/main.3ee9f3de.js"
+  ]
+}
