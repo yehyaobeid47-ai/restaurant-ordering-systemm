@@ -1,51 +1,71 @@
 # Restaurant Ordering System
 
 ## Project Description
-This is a **frontend web application** built using **ReactJS** that allows users to browse a restaurant menu, add items to a cart, and simulate ordering food online. The application focuses on **responsive design**, clean **UI/UX**, and component-based development.
+This is a full-stack web application that allows users to browse a restaurant menu,
+select food and drinks, place orders, and send contact messages.
+The backend is built using Node.js and Express, with MySQL as the database.
+The frontend is built using React.
 
-Users can view menu categories, select items, see their cart with dynamic total pricing, and experience a modern restaurant ordering interface.
-
----
-
-## Features
-- Browse menu items by category
-- View item details
-- Add and remove items from cart
-- Dynamic total price calculation
-- Responsive design for desktop and mobile devices
-- Clean and intuitive UI
+The project demonstrates client-server communication, database integration,
+CRUD operations, version control, and backend deployment.
 
 ---
 
 ## Technologies Used
-- ReactJS
-- React Router
-- JavaScript (ES6)
-- HTML5 & CSS3
-- Bootstrap / Tailwind CSS
-- Git & GitHub for version control
-- Netlify / Vercel for frontend deployment
+- Frontend: React.js
+- Backend: Node.js (Express)
+- Database: MySQL
+- HTTP Client: Axios / Fetch
+- Version Control: Git & GitHub
+- Backend Hosting: Render
 
 ---
 
-## Setup Instructions
+## Features
+- Dynamic menu loaded from database
+- Food and drink categories
+- Order placement with quantity and notes
+- Orders stored in MySQL database
+- Contact form with messages saved to database
+- REST API backend
 
-1. **Clone the repository**  
-   Open a terminal and run:  
-2. **Navigate into the project folder**
-cd project1
+---
 
-3. **Install dependencies**  
-Make sure Node.js is installed, then run:  
-npm install
+## Database Structure
 
-4. **Start the development server**  
-npm start
+### Tables Used:
+- `menu` – stores food and drink items
+- `orders` – stores customer orders
+- `contact_messages` – stores contact form messages
 
-5. **Open the app in your browser**  
-Visit:  
-http://localhost:3000
+The database is created and managed using MySQL and phpMyAdmin during development.
 
-## Deployment
-The frontend is hosted on **GitHub Pages**.  
-You can view the live project here: [https://yehyaobeid47-ai.github.io/restaurant-ordering-systemm/]
+---
+
+## API Endpoints (Backend)
+- `GET /api/categories` – get food and drink categories
+- `GET /api/menu/:main/:sub` – get items by category
+- `GET /api/item/:name` – get single item details
+- `POST /api/orders` – save order
+- `POST /api/contact` – save contact message
+
+---
+
+## Live Backend (Render)
+The backend is deployed on Render and accessible at:
+
+https://restaurant-full.onrender.com
+
+---
+
+## Setup Instructions (Local Development)
+
+### Backend
+1. Clone the repository
+2. Navigate to backend folder
+3. Run `npm install`
+4. Configure MySQL database
+5. Run backend using:
+   ```bash
+   node server.js
+
